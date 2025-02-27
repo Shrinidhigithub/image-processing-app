@@ -53,3 +53,12 @@ Push your final code to GitHub and submit the repository link using the provided
 
 ## License
 MIT
+
+## Postman Test 
+API - POST - http://localhost:5000/upload
+Body - Key - file and Value - sample.csv
+
+{
+    "request_id": "5b1fc5c7-416d-469d-8d0c-96f3c643024a"
+}
+
