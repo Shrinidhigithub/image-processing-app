@@ -13,16 +13,11 @@ This application processes image data from CSV files asynchronously. It:
 image-processing-app/ ├── src/ │ ├── routes/ │ │ ├── upload.js # CSV upload API │ │ └── status.js # Processing status API │ ├── workers/ │ │ └── imageProcessor.js # Asynchronous worker for image processing │ ├── services/ │ │ ├── storage.js # AWS S3 integration for image uploads │ │ └── database.js # Database interactions (PostgreSQL) │ ├── utils/ │ │ └── csvParser.js # CSV parsing utility │ ├── models/ │ │ └── request.model.js # Documentation for database schema │ └── app.js # Express application setup ├── config/ │ ├── dbConfig.js # (Optional) Database configuration │ └── redisConfig.js # (Optional) Redis configuration ├── .env # Environment variables ├── package.json # Dependencies & scripts └── README.md # Documentation & setup instructions
 
 
-## Setup Instructions
-1. Clone the repository and navigate to the project folder.
-2. Create a `.env` file in the root directory (see sample below).
-3. Install dependencies:
-
 ## npm install
-4. Start the Express server:
+Start the Express server:
 
 ## npm start
-5. Start the worker process:
+Start the worker process:
 
 ## npm run worker
 6. Test the APIs using Postman or curl:
@@ -44,12 +39,6 @@ PORT=5000 DATABASE_URL=postgres://user:password@localhost:5432/images REDIS_URL=
 
 ## Database Schema
 See `src/models/request.model.js` for details.
-
-## Postman Collection
-A Postman collection is included in the repository (or provide a public link).
-
-## Submission
-Push your final code to GitHub and submit the repository link using the provided Google form.
 
 ## License
 MIT
