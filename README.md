@@ -20,7 +20,7 @@ Start the Express server:
 Start the worker process:
 
 ## npm run worker
-6. Test the APIs using Postman or curl:
+Test the APIs using Postman or curl:
 - **POST /upload**: Upload a CSV file.
 - **GET /status/:request_id**: Check processing status.
 
